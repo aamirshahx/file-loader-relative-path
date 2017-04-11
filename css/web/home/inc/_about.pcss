@@ -1,0 +1,49 @@
+.worldmap {
+	background: url("~web/home/worldmap.png") no-repeat center center;
+	margin-top: 60px;
+}
+
+.buzz-container {
+	width: 850px;
+	margin: 0 auto;
+
+	li {
+		padding: 30px 0;
+
+		&.last-child {
+			border: none;
+			padding-bottom: 10px;
+		}
+
+		img {
+			size: 60px;
+			float: left;
+			border: 3px solid #fff;
+			border-radius: 50%;
+		}
+
+		.buzz-details {
+			margin-left: 90px;
+
+			&.quoteBG { background: url("~web/home/quote-icon.png") left top no-repeat; }
+			&.tweetBg { background: url("~web/home/twitter-icon.png") left top no-repeat; }
+
+			p {
+				font-style: italic;
+				font-size: 14px;
+
+			}
+
+			span {
+				display: block;
+				margin-top: 15px;
+				font-style: italic;
+				font-size: 13px;
+
+				b {
+					display: block;
+				}
+			}
+		}
+	}
+}
