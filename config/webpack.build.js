@@ -56,11 +56,17 @@ export default (env) => {
 					options: {
 
 						/* // With Hardcoded Path
+							// path of images in images/web/home/ are wrong
+
 						name: '[path][name].[hash].[ext]',
 						outputPath: '',
 						publicPath: '../../'*/
 
-                         // With Relative Path
+
+						// With Relative Path
+						// images are not appearing in build/images
+						// instead the images with ../../ are in repo's parent directory and
+						// images with ../../../ are in repo's parent's parent directory
 						name: '[name].[hash].[ext]',
                         useRelativePath: true,
 						publicPath: url => url
